@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container{
+      background-color: #000;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+
+    .item-1{
+      background-color: #E72F24;
+      grid-area: 1 1 2 2;
+    }
+    .item-4{
+      background-color: #F0F1EC;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 2;
+      grid-column-end: 4;
+
+    }
+
+    .item-5{
+      background-color: #004592;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: -2;
+      grid-column-end: -1;
+      border-bottom: 10px solid black;
+    }
+
+    .item-7{
+      background-color: #F9D01E;
+      grid-row-start: -2;
+      grid-row-end: -1;
+      grid-column-start: 2;
+      grid-column-end: 3;
+
+
+    }
+
+    .item-8{
+      background-color: #232629;
+      grid-row-start: -2;
+      grid-row-end: -1;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+
+    .item-2{
+      background-color: white;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 2;
+      grid-column-end: -1;
+    }
+
+    .item-3{
+      background-color: white;
+      grid-row-start: 2;
+      grid-row-end: -2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .item-6{
+      background-color: white;
+      grid-row: span 2;
+    }
+    .item-9{
+      background-color: white;
+      
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="item item-1"></div>
+    <div class="item item-2"></div>
+    <div class="item item-3"></div>
+    <div class="item item-4"></div>
+    <div class="item item-5"></div>
+    <div class="item item-6"></div>
+    <div class="item item-7"></div>
+    <div class="item item-8"></div>
+    <div class="item item-9"></div>
+  </div>
+</body>
+
+</html>
